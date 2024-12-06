@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <div class="w-[98vw] min-h-[100vh] absolute bg-black text-white">
+        <div class="bg-gradient-to-l from-orange-700  to-transparent">
+            <div class="w-[70vw] h-[15vh] mx-auto flex items-center justify-between">
+                <span class="debit h-[12vh] min-w-[10vw] px-4 my-4 flex items-center justify-center bg-gradient-to-l from-red-950 to-red-700 rounded-xl border-2 border-black text-white text-3xl font-semibold"></span>
+                <span class="credit h-[12vh] min-w-[10vw] px-4 my-4 flex items-center justify-center bg-gradient-to-l from-green-950 to-green-700 rounded-xl border-2 border-black text-white text-3xl font-semibold"></span>
+            </div>
+        </div>
+        
+        <div class="w-full py-5">
+            <div id="container" class="card-container w-[80vw] h-[80vh] mx-auto overflow-y-scroll flex flex-wrap gap-[7vh] justify-center scrollbar-hide pb-10 py-4 ">
+            
+            </div>
+        </div>
+        
+        <div class="w-full flex justify-center">
+            <button class="formButton h-[3rem] w-[3rem] bg-blue-500 text-white z-2 fixed bottom-[5vh] right-[3vw] rounded-full border-2 border-black text-4xl font-semibold">+</button>
+        </div>
+        
+        // createing new stuff
+        <div class="formContainer text-black z-10 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+            <form action="" id="form" class="w-[40vw] h-auto bg-white border-2 px-16 py-8 rounded-xl shadow-2xl shadow-black">
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="trip-for" class="w-[40%]">Trip For:</label>
+                    <input type="text" id="trip-For" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Trip For">
+                </div>
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="number-of-persons" class="w-[40%]">Number of Persons:</label>
+                    <input type="number" id="number-Of-Persons" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Number of Persons">
+                </div>
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="total-expense" class="w-[40%]">Total Expense:</label>
+                    <input type="number" id="total-Expense" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Total Expense">
+                </div>
+                <div class="w-full flex justify-center mt-4">
+                    <button type="submit" id="submit-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit</button>
+                </div>
+            </form>
+            <div class="w-full flex justify-center mt-4">
+                <button id="cancel-btn" class="text-white text-4xl text-white font-bold py-2 px-4 rounded">X</button>
+            </div>
+        </div>
+
+        // for upldating old stuff
+        <div class="updateFormContainer text-black z-10 fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden">
+            <form action="submit" id="update-form" class="w-[40vw] h-auto bg-white border-2 px-16 py-8 rounded-xl shadow-2xl shadow-black">
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="trip-for" class="w-[40%]">Trip For:</label>
+                    <input type="text" id="update-trip-For" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Trip For">
+                </div>
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="number-of-persons" class="w-[40%]">Number of Persons:</label>
+                    <input type="number" id="update-number-Of-Persons" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Number of Persons">
+                </div>
+                <div class="mb-4 pt-2 flex justify-between">
+                    <label for="total-expense" class="w-[40%]">Total Expense:</label>
+                    <input type="number" id="update-total-Expense" class="w-[60%] px-4 py-1.5 border border-black rounded-lg" placeholder="Total Expense">
+                </div>
+                <div class="w-full flex justify-center mt-4">
+                    <button type="submit" id="update-submit-btn" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Update</button>
+                </div>
+            </form>
+            <div class="w-full flex justify-center mt-4">
+                <button id="update-cancel-btn" class="text-white text-4xl text-white font-bold py-2 px-4 rounded">X</button>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.8/axios.min.js" integrity="sha512-v8+bPcpk4Sj7CKB11+gK/FnsbgQ15jTwZamnBf/xDmiQDcgOIYufBo6Acu1y30vrk8gg5su4x0CG3zfPaq5Fcg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js" ></script>
+</html>
