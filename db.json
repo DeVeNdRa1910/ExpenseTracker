@@ -1,40 +1,16 @@
 {
-  "trip": [
+  "trips": [
     {
-      "id": "1733432481783",
-      "tripFor": "Bangalore",
-      "numberOfPeople": 4,
-      "totalExpense": 3000
+      "id": "f0f6d05a-a245-4b26-9066-ab0cc9469eb6",
+      "totalExpense": 30000,
+      "place": "Ooty",
+      "numberOfPersons": 6
     },
     {
-      "id": "1733432525657",
-      "tripFor": "Ooty",
-      "numberOfPeople": 62,
-      "totalExpense": 33000
-    },
-    {
-      "id": "1733432542387",
-      "tripFor": "Mysore",
-      "numberOfPeople": 4,
-      "totalExpense": 20000
-    },
-    {
-      "id": "1733432588739",
-      "tripFor": "Manali",
-      "numberOfPeople": 6,
-      "totalExpense": 24000
-    },
-    {
-      "id": "1733432613684",
-      "tripFor": "Shimla",
-      "numberOfPeople": 6,
-      "totalExpense": 30000
-    },
-    {
-      "id": "1733432651101",
-      "tripFor": "Bhutan",
-      "numberOfPeople": 5,
-      "totalExpense": 20000
+      "id": "87834384-a6ca-498e-a437-8a090088b896",
+      "totalExpense": 89898,
+      "place": "unhjun",
+      "numberOfPersons": 78
     }
   ]
 }
