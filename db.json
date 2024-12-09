@@ -1,0 +1,16 @@
+{
+  "trips": [
+    {
+      "id": "f0f6d05a-a245-4b26-9066-ab0cc9469eb6",
+      "totalExpense": 30000,
+      "place": "Ooty",
+      "numberOfPersons": 6
+    },
+    {
+      "id": "87834384-a6ca-498e-a437-8a090088b896",
+      "totalExpense": 89898,
+      "place": "unhjun",
+      "numberOfPersons": 78
+    }
+  ]
+}
